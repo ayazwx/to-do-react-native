@@ -4,8 +4,35 @@ import Task from './components/Task';
 
 
 export default function App() {
+  // const access_token = "167wwfgchcjskankd"
   const [task, setTask] = useState();
   const [taskItems, setTaskItems] = useState([])
+
+  // const getTasks = async () => {
+  //   try {
+  //     const tasks = await AsyncStorage.getItem('tasks', setTaskItems(tasks));
+  //     if (tasks !== null) {
+  //       return JSON.parse(taskItems);
+  //     } else {
+  //       return [];
+  //     }
+  //   } catch (error) {
+  //     alert('Error getting tasks:', error);
+  //   }
+  // };
+
+
+  // const saveTasks = async (tasks) => {
+  //   try {
+  //     await AsyncStorage.setItem('tasks', JSON.stringify(taskItems));
+  //   } catch (error) {
+  //     alert('Error saving tasks:', error);
+  //   }
+  // };
+  // setTaskItems(AsyncStorage.getItem(access_token, taskItems))
+  // const setStorage = () => {
+  //   SyncStorage.set('Tasks', taskItems);
+  // }
 
   const handleAddTask = () => {
     if (task != "") {
